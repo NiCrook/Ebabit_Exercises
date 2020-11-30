@@ -8,6 +8,8 @@ def largest_number(number_list: list) -> int:
             del number_list[1]
         elif number_list[0] < number_list[1]:
             del number_list[0]
+        elif number_list[0] == number_list[1]:
+            del number_list[0]
     if len(number_list) == 1:
         return number_list[0]
 
