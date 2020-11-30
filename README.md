@@ -1,2 +1,2 @@
-# Ebabit_Exercises
+# Edabit_Exercises
 Simple Exercises
