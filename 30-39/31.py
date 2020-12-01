@@ -3,8 +3,11 @@
 
 
 def hello_name(name: str) -> str:
-    greeting = f"Hello {name}!"
-    return greeting
+    try:
+        greeting = f"Hello {name}!"
+        return greeting
+    except TypeError as err:
+        print(f"Error: {err}")
 
 
 print(hello_name("Gerald"))
