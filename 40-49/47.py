@@ -11,16 +11,13 @@ def two_product(list1: list, num1: int) -> list:
         empty_list = []
         while a != len(list1) - 1:
             while b != len(list1):
-                # print(list1[a] * list1[b])
                 if list1[a] * list1[b] == num1:
                     empty_list.append(list1[a])
                     empty_list.append(list1[b])
                     return empty_list
                 else:
-                    # print(list1[a], list1[b], empty_list)
                     b += 1
             else:
-                # print(list1[a], list[b], empty_list)
                 a += 1
                 b = a + 1
         return empty_list
