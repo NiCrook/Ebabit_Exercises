@@ -4,9 +4,9 @@
 
 def even_or_odd(num1: int) -> str:
     try:
-        if num1 % 2:
-            return "Odd"
-        return "Even"
+        if not num1 % 2:
+            return "Even"
+        return "Odd"
     except TypeError as err:
         print(f"Error: {err}")
 
