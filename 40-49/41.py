@@ -7,7 +7,7 @@
 def list_less_then_hunnid(user_list: list) -> bool:
     try:
         result = 0
-        while len(user_list) != 0:
+        while len(user_list):
             result += user_list[0]
             del user_list[0]
         if result < 100:
