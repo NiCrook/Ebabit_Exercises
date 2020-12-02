@@ -12,8 +12,7 @@ def list_less_then_hunnid(user_list: list) -> bool:
             del user_list[0]
         if result < 100:
             return True
-        else:
-            return False
+        return False
     except TypeError as err:
         print(f"Error: {err}")
 
