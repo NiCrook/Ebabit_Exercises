@@ -8,7 +8,7 @@ def jay_and_bob(weight: str) -> str:
         weight_dict = {"ounce": 28, "half": 14, "quarter": 7, "eighth": 3.5, "tenth": 2.8}
         if weight in weight_dict:
             grams = weight_dict[weight]
-            return f"{grams}"
+            return f"{grams} grams"
         else:
             return "Yo, what?"
     except TypeError as err:
