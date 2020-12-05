@@ -14,11 +14,11 @@ def fizz_buzz(num_: int) -> str:
         buzz = "Buzz"
         fibu = "FizzBuzz"
         no_fizz = f"{num_}"
-        if num_ == 15:
+        if num_ % 5 == 0 and num_ % 3 == 0:
             return fibu
-        elif num_ == 5:
+        elif num_ % 5 == 0:
             return buzz
-        elif num_ == 3:
+        elif num_ % 3 == 0:
             return fizz
         else:
             return no_fizz
