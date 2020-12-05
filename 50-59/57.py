@@ -4,9 +4,8 @@
 import typing
 
 
-def list_of_multiples(num: int, length: int) -> typing.List[int]:
+def list_of_multiples(num: int, length: int, result=0) -> typing.List[int]:
     try:
-        result = 0
         result_list = []
         while result != length:
             result += 1
