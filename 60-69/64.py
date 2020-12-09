@@ -7,7 +7,7 @@
 
 def sum_fractions(nested_list: list) -> int:
     total_sum = 0
-    while len(nested_list) != 0:
+    while len(nested_list):
         current_list = nested_list[0]
         while len(current_list) != 1:
             current_fraction = current_list[0] / current_list[1]
