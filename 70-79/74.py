@@ -25,8 +25,7 @@ PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67
 
 
 def is_prime(prime_list: list, num1: int):
-    half = len(PRIMES) / 2
-    half = int(half)
+    half = int(len(PRIMES) / 2)
 
     if num1 < half:
         while half != 0:
