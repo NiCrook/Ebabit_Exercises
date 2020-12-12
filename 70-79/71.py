@@ -17,7 +17,6 @@
 
 def majority_vote(vote_list: list):
     #   establish placeholders
-    candilist = []
     candidict = {}
     vote_len = len(vote_list) - 1
 
@@ -29,10 +28,6 @@ def majority_vote(vote_list: list):
         else:
             vote_len -= 1
 
-    #   add unique elements to list
-    for k in candidict.keys():
-        if k not in candilist:
-            candilist.append(k)
 
     #   count each vote and add it to the dict
     vote_len = len(vote_list)
