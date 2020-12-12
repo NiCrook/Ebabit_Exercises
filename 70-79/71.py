@@ -28,7 +28,6 @@ def majority_vote(vote_list: list):
         else:
             vote_len -= 1
 
-
     #   count each vote and add it to the dict
     vote_len = len(vote_list)
     vote_index = vote_len - 1
