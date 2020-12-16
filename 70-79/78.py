@@ -25,32 +25,32 @@ def atbash(word: str):
     cipher = ""
     cur_ind = 0
     while len(word_list) != 0:
-        if word_list[0].isupper():
-            if word_list[0] == ALPHA_LIST[cur_ind]:
+        if word_list[-1].isupper():
+            if word_list[-1] == ALPHA_LIST[cur_ind]:
                 cur_ind += 1
                 cur_ind *= -1
                 cipher_char = ALPHA_LIST[cur_ind]
-                cipher += cipher_char
-                del word_list[0]
+                cipher = cipher_char + cipher
+                del word_list[-1]
                 cur_ind = 0
             else:
                 cur_ind += 1
-        elif word_list[0].islower():
+        elif word_list[-1].islower():
             cipher_len = len(cipher)
             while cipher_len == len(cipher):
-                word_list[0] = word_list[0].upper()
-                if word_list[0] == ALPHA_LIST[cur_ind]:
+                word_list[-1] = word_list[-1].upper()
+                if word_list[-1] == ALPHA_LIST[cur_ind]:
                     cur_ind += 1
                     cur_ind *= -1
                     cipher_char = ALPHA_LIST[cur_ind].lower()
-                    cipher += cipher_char
+                    cipher = cipher_char + cipher
                     cur_ind = 0
-                    del word_list[0]
+                    del word_list[-1]
                 else:
                     cur_ind += 1
         else:
-            cipher += word_list[0]
-            del word_list[0]
+            cipher = word_list[-1] + cipher
+            del word_list[-1]
 
     return cipher
 
