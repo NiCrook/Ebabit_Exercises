@@ -51,25 +51,24 @@ def freed_prisoner(prison: list):
 
     if prison[0] == 0:
         return prisoners_free
+    if prison[0] == 1 and 1 not in prison[1:]:
+        prisoners_free += 1
+        return prisoners_free
 
     while cur_cell != len(prison):
         cur_ind = 0
         if prison[cur_cell] == 0:
             cur_cell += 1
         else:
-            if 1 not in prison[1:]:
-                prisoners_free += 1
-                return prisoners_free
-            else:
-                prisoners_free += 1
-                cur_cell += 1
-                while cur_ind != len(prison):
-                    if prison[cur_ind] == 1:
-                        prison[cur_ind] = 0
-                        cur_ind += 1
-                    elif prison[cur_ind] == 0:
-                        prison[cur_ind] = 1
-                        cur_ind += 1
+            prisoners_free += 1
+            cur_cell += 1
+            while cur_ind != len(prison):
+                if prison[cur_ind] == 1:
+                    prison[cur_ind] = 0
+                    cur_ind += 1
+                elif prison[cur_ind] == 0:
+                    prison[cur_ind] = 1
+                    cur_ind += 1
 
     return prisoners_free
 
