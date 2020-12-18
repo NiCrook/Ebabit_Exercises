@@ -40,20 +40,16 @@
 
 def shuffle_count(cards: int):
     shuffles = 0
-    next_ind = 1
-    original_deck = []
+    original_deck = list(range(0, cards))
     first_half = []
     second_half = []
     shuffled_deck = []
-
-    while len(original_deck) != cards:
-        original_deck.append(next_ind)
-        next_ind += 1
 
     def half(half_, deck_, cur_ind):
         half = int(cards / 2)
         while len(half_) != half:
             half_.append(deck_[cur_ind])
+            original_deck[cur_ind] = half_[cur_ind]
             cur_ind += 1
 
     half(first_half, original_deck, 0)
