@@ -20,7 +20,6 @@
 
 def is_parallelogram(four: list):
     slopes = []
-    two_coords = []
     a, b = 0, 1
 
     def find_slope(x1, x2, y1, y2):

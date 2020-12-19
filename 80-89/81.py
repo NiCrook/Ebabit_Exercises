@@ -49,7 +49,6 @@ def shuffle_count(cards: int):
         half = int(cards / 2)
         while len(half_) != half:
             half_.append(deck_[cur_ind])
-            original_deck[cur_ind] = half_[cur_ind]
             cur_ind += 1
 
     half(first_half, original_deck, 0)
