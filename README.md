@@ -1,5 +1,5 @@
 # Edabit Exercises
-A catalog of exercises from the website https://www.edabit.com
+A catalog of exercises from the website https://edabit.com/
 
 # Code Peek
 ```
@@ -15,7 +15,7 @@ A catalog of exercises from the website https://www.edabit.com
 ```
 
 # Credits
-Credits to https://www.edabit.com
+Credits to https://edabit.com/
 
 # License
 MIT @ Nicholas Crook
